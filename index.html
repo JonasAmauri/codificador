@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="estilo/estilo.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&family=Open+Sans:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main class="main container">
+        <header class="cabecalho">
+            <img class="detetive" src="imagens/detetive.png" alt="Detetive com lupa">
+            <h1>Mensagens Codificadas</h1>
+        </header>
+
+        <div class="container-input">
+            <div class="input">
+                <textarea id="input-texto-cripto" placeholder="Digite sua mensagem aqui..."></textarea>
+                <p> Atenção: Apenas letras minúsculas, sem acento ou caracteres especiais.</p>
+            </div>
+
+            <div id="output">
+                <img class="detetive" src="imagens/detetive.png" alt="Detetive com lupa">
+                <h2>Sua mensagem vai aparecer aqui.</h2>
+                <span>Digite uma mensagem que deseja criptografar ou descritografar.</span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <div class="container-bnt">
+                <button onclick="criptografar()" class="bnt-criptografar">Criptografar</button>
+                <button onclick="descriptografar()" class="bnt-descriptografar">Descriptografar</button>
+            </div>
+        </div>
+    </main>
+    <footer class="rodape">
+        <h3>Desenvolvido por J.A.M</h3>
+    </footer>
+    <script src="interacao/script.js"></script>
+</body>
+
+</html>
